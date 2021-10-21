@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*CSS for Basic logo formation  */
+  
+  body {
+    height: 100vh;
+    background-color: #eeba6e;
+  }
+
+  .circle{
+    width: 102.4px;
+    height: 102.4px;
+    border: 15.36px solid white;
+    border-radius: 50%;
+  }
+  
+  .circle-1{
+  position: absolute;
+  top: 10.24px;
+  left: 409.6px;
+}
+
+  .triangle {
+    position: absolute;
+    left: 317.44px;
+    top: 51.2px;
+    width: 0;
+    height: 0;
+    border: 9rem solid transparent;
+    border-top: 0;
+    border-bottom: 15rem solid #ed147c;
+  }
+  
+  .triangle-inner {
+    position: absolute;
+    top: 2rem;
+    left: -7.2rem;
+    width: 0;
+    height: 0;
+    border: 7.2rem solid transparent;
+    border-top: 0;
+    border-bottom: 12rem solid #eeba6e;  
+  }
+  
+  .rectangle {
+    width: 286.72px;
+    height: 256px;
+    border: 15.36px solid #2b4b41;
+    margin-top: 10.24px;
+    position: absolute;
+    top: 291.84px;
+    left: 317.44px;
+  }
+
+  .circle-2{
+    position: absolute;
+    top: 501.76px;
+    left:  409.6px;
+    z-index: -1;
+  }
+
+h1{
+  opacity: 0;
+  position: absolute;
+  top: 237.5px;
+  left: 204.8px;
+  font-size: 102.4px;
+  font-family: cursive;
+}
+/* Animation 1 :-  animation 1 is for shapes movement and sizing */
+
+  .circle-1{
+    animation: cir1 2s 2s ease-in-out 1 alternate both;
+  }
+  
+  .circle-2{
+    animation: cir1 2s 2s ease-in-out 1 alternate both;
+  }
+  
+  .triangle{
+    animation: tri 2s 2s ease-in-out 1 alternate both;
+  }
+  
+  .rectangle{
+    animation: rec 2s 2s ease-in-out 1 alternate both;
+  }
+
+  @keyframes cir1 {
+    100%{
+      border-color: black;
+      top: 187.5px;
+      left: 102.4px;
+      width: 245.76px;
+      height: 245.76px;
+    }
+  }
+  
+  @keyframes tri {
+    100%{
+      top: 187.5px;
+      border-bottom-color: black;
+    }
+  }
+
+  @keyframes rec {
+    100%{
+      top: 170.625px;
+      left: 614.4px;
+      border-color: black;
+      width: 245.76px;
+      height: 245.76px;
+    }
+  }
+
+/* Animation 2 :- animation 2 is for box formation*/
+
+.side1{
+  background-color: black;
+  position: absolute;
+  top: 62.5px;
+  left:30.72px;
+  height: 10.24px;
+  width: 0px;
+  animation: s1 2s ease-in-out 4s 1 alternate both;
+}
+
+.side2{
+  position: absolute;
+  background-color: black;
+  top: 62.5px;
+  left: 30.72px;
+  width: 10.24px;
+  height: 0px;
+  animation: s2 2s ease-in-out 4s 1 alternate both;
+}
+
+.side3{
+  background-color: black;
+  position: absolute;
+  top: 553.125px;
+  left: 30.72px;
+  height: 10.24px;
+  width: 0px;
+ animation: s3 2s ease-in-out 5650ms 1 alternate both;
+}
+
+.side4{
+  background-color: black;
+  position: absolute;
+  top: 62.5px;
+  left: 947.2px;
+  width: 10.24px;
+  height: 0px;
+  animation: s4 2s ease-in-out 5650ms 1 alternate both;
+}
+
+@keyframes s1 {
+  100%{
+    width: 921.6px;
+  }
+}
+
+ @keyframes s2 {
+   100%{
+     height: 500px;
+   }
+ }
+
+@keyframes s3 {
+  100%{
+    width: 921.6px;
+  }
+}
+
+@keyframes s4 {
+  100%{
+    height: 500px;
+  }
+}
+
+/* Animation 3 :- animation 3 is for box rotation and adding phone no. */
+
+h1{
+  animation: hh 1s ease 8s 1 alternate both;
+}
+
+@keyframes hh {
+  0%{
+    transform: rotateY(-90deg);
+  }
+  50%{
+    transform: rotateY(45deg);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Animation for Logo  */
+
+#imgLogo{
+  opacity: 0;
+  position: absolute;
+  top: 270px;
+  left: 290px;
+  animation: log 1s ease-out 13s 1 alternate both;
+}
+
+@keyframes log {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
